@@ -8,7 +8,7 @@
 #
 #     print("Not Hello")
 
-a = int(input("Enter the value of a\n"))
+a = 19
 print(type(a))
 if a == 10:
     print("hello world")
