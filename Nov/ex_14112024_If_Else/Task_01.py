@@ -15,11 +15,16 @@
 s1 = int(input("Enter the length of s1:\n"))
 s2 = int(input("Enter the length of s2:\n"))
 s3 = int(input("Enter the length of s3:\n"))
-
-if s1==s2 and s1==s3:
-    print("Equilateral triangle")
-elif s1==s2 or s2==s3 or s1==s3:
-    print("isoceles triangle")
+if s1>0 and s2>0 and s3>0:
+    if s1+s2>s3 and s2+s3>s1 and s3+s1>s2:
+        if s1==s2 or s2==s3 or s1==s3:
+            print("Isoceles triangle")
+        elif s1==s2 or s1==s3:
+            print("Equilateral triangle")
+        else:
+            print("Scalene triangle")
+    else:
+        print("Not a triangle")
 else:
-    print("Scalene triangle")
+    print("Not a valid length")
 
